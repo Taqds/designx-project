@@ -163,9 +163,53 @@
         /* ═══ INNER HERO ═══ */
         .inner-hero {
             padding-top: 180px;
-            padding-bottom: 80px;
-            background: radial-gradient(circle at top left, rgba(255, 0, 110, 0.1), transparent);
+            padding-bottom: 120px;
+            background: radial-gradient(circle at top left, rgba(157, 78, 221, 0.15), transparent),
+                        radial-gradient(circle at bottom right, rgba(58, 134, 255, 0.1), transparent);
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .inner-hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: linear-gradient(var(--border) 1px, transparent 1px),
+                              linear-gradient(90deg, var(--border) 1px, transparent 1px);
+            background-size: 50px 50px;
+            mask-image: radial-gradient(circle at center, black, transparent 80%);
+            -webkit-mask-image: radial-gradient(circle at center, black, transparent 80%);
+            opacity: 0.15;
+            z-index: -1;
+        }
+
+        .hero-glow-line {
+            position: absolute;
+            width: 200%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--primary), transparent);
+            top: 40%;
+            left: -50%;
+            transform: rotate(-5deg);
+            opacity: 0.1;
+            filter: blur(2px);
+            animation: lineFlow 15s linear infinite;
+        }
+
+        .hero-glow-line:nth-child(2) {
+            top: 60%;
+            animation-delay: -7s;
+            background: linear-gradient(90deg, transparent, var(--secondary), transparent);
+            transform: rotate(3deg);
+        }
+
+        @keyframes lineFlow {
+            0% { transform: translateX(-10%) rotate(-5deg); }
+            100% { transform: translateX(10%) rotate(-5deg); }
         }
 
         .section-label {
@@ -317,6 +361,42 @@
             height: auto;
             border-radius: 12px;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        /* CTAs in ZigZag */
+        .zig-ctas {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .zig-cta-btn {
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.8rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: 0.3s;
+            border: 1px solid transparent;
+        }
+
+        .zig-cta-btn.primary {
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            color: #fff;
+        }
+
+        .zig-cta-btn.secondary {
+            background: transparent;
+            border-color: var(--border);
+            color: var(--text);
+        }
+
+        .zig-cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(157, 78, 221, 0.2);
         }
 
         /* FOOTER */
@@ -563,6 +643,8 @@
 
     <!-- ═══ HERO ═══ -->
     <header class="inner-hero">
+        <div class="hero-glow-line"></div>
+        <div class="hero-glow-line"></div>
         <div class="container fade-up">
             <div class="section-label">Our Workflow</div>
             <h1>A Clear Path to <span>Digital Success</span></h1>
@@ -596,6 +678,10 @@
                                 <li>Project Timeline</li>
                             </ul>
                         </div>
+                        <div class="zig-ctas">
+                            <a href="tel:+17188075262" class="zig-cta-btn primary"><i class="fas fa-phone"></i> Call Now</a>
+                            <a href="index.html#contact" class="zig-cta-btn secondary"><i class="fas fa-envelope"></i> Get a Quote</a>
+                        </div>
                     </div>
                     <div class="zig-visual">
                         <img src="assets/local_seo_fort_lauderdale_visual_1772741981432.png"
@@ -624,6 +710,10 @@
                                 <li>Asset Package</li>
                             </ul>
                         </div>
+                        <div class="zig-ctas">
+                            <a href="tel:+17188075262" class="zig-cta-btn primary"><i class="fas fa-phone"></i> Call Now</a>
+                            <a href="index.html#contact" class="zig-cta-btn secondary"><i class="fas fa-envelope"></i> Get a Quote</a>
+                        </div>
                     </div>
                     <div class="zig-visual">
                         <img src="assets/design_ux_visual_premium_1772742325301.png" alt="UX Design Phase Visual"
@@ -650,6 +740,10 @@
                                 <li>CMS Integration</li>
                                 <li>Performance Tuning</li>
                             </ul>
+                        </div>
+                        <div class="zig-ctas">
+                            <a href="tel:+17188075262" class="zig-cta-btn primary"><i class="fas fa-phone"></i> Call Now</a>
+                            <a href="index.html#contact" class="zig-cta-btn secondary"><i class="fas fa-envelope"></i> Get a Quote</a>
                         </div>
                     </div>
                     <div class="zig-visual">
@@ -678,6 +772,10 @@
                                 <li>UX Final Review</li>
                             </ul>
                         </div>
+                        <div class="zig-ctas">
+                            <a href="tel:+17188075262" class="zig-cta-btn primary"><i class="fas fa-phone"></i> Call Now</a>
+                            <a href="index.html#contact" class="zig-cta-btn secondary"><i class="fas fa-envelope"></i> Get a Quote</a>
+                        </div>
                     </div>
                     <div class="zig-visual">
                         <img src="assets/wordpress_expert_visual_1772741923587.png" alt="QA Testing Phase Visual"
@@ -704,6 +802,10 @@
                                 <li>Uptime Monitoring</li>
                                 <li>Growth Strategy</li>
                             </ul>
+                        </div>
+                        <div class="zig-ctas">
+                            <a href="tel:+17188075262" class="zig-cta-btn primary"><i class="fas fa-phone"></i> Call Now</a>
+                            <a href="index.html#contact" class="zig-cta-btn secondary"><i class="fas fa-envelope"></i> Get a Quote</a>
                         </div>
                     </div>
                     <div class="zig-visual">
