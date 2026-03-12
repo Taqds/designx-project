@@ -82,6 +82,12 @@
             overflow-x: hidden;
         }
 
+        /* ── BOX-WIDTH LAYOUT: bg full-width, content capped at 1440px ── */
+        section {
+            padding-left: max(5%, calc((100% - 1400px) / 2));
+            padding-right: max(5%, calc((100% - 1400px) / 2));
+        }
+
         /* NAV */
         nav {
             position: fixed;
@@ -2528,6 +2534,7 @@
         }
     }
     </script>
+
 </body>
 
 </html>
