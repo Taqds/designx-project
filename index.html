@@ -21,7 +21,8 @@
         content="Top-rated web designer in Fort Lauderdale, Florida. DesignX delivers custom website development, SEO, WordPress, and graphic design services for South Florida businesses. Call today.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://design-x-web.netlify.app/">
-    <meta property="og:image" content="https://design-x-web.netlify.app/assets/hero_fort_lauderdale_premium_1772742752067.png">
+    <meta property="og:image"
+        content="https://design-x-web.netlify.app/assets/hero_fort_lauderdale_premium_1772742752067.png">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="canonical" href="https://design-x-web.netlify.app/">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -1278,6 +1279,11 @@
                 gap: 24px;
             }
 
+            .width {
+                width: 1200px !important;
+                margin: 0 auto;
+            }
+
             .section-header h2 {
                 font-size: 24px;
             }
@@ -1496,222 +1502,243 @@
 
     <!-- ═══ SERVICES (TABBED) ═══ -->
     <section id="services" style="background:var(--dark);">
-        <div class="section-header fade-up">
-            <div class="grid-center">
-                <div class="section-label">Services</div>
-            </div>
-            <h2>Solutions to Your <span>Digital Challenges</span></h2>
-            <p>Strategic services designed to solve specific business problems and drive measurable results.</p>
-        </div>
-
-        <div class="services-tabs fade-up">
-            <button class="tab-btn active" onclick="switchTab('dev',this)">Full Stack Development</button>
-            <button class="tab-btn" onclick="switchTab('wp',this)">WordPress Solutions</button>
-            <button class="tab-btn" onclick="switchTab('seo',this)">SEO &amp; Content</button>
-            <button class="tab-btn" onclick="switchTab('design',this)">Design &amp; Squarespace</button>
-        </div>
-
-        <div class="tab-panel active" id="tab-dev">
-            <div class="ps-card fade-up">
-                <div>
-                    <div class="ps-problem-label">Problem</div>
-                    <div class="ps-problem-text">Outdated, slow-loading websites that drive customers away</div>
+        <div class="width">
+            <div class="section-header fade-up">
+                <div class="grid-center">
+                    <div class="section-label">Services</div>
                 </div>
-                <div>
-                    <div class="ps-solution-label">Solution</div>
-                    <h3>High-Performance Web Development</h3>
-                    <p>Blazing-fast custom web apps that load in under 2 seconds, keeping visitors engaged and improving
-                        search rankings.</p>
-                </div>
-                <div class="ps-metric"><i class="fas fa-chart-line"></i><span>40% average increase in page session
-                        time</span></div>
-                <a href="services.html" class="ps-link">Explore Web Projects <i class="fas fa-chevron-right"></i></a>
+                <h2>Solutions to Your <span>Digital Challenges</span></h2>
+                <p>Strategic services designed to solve specific business problems and drive measurable results.</p>
             </div>
-            <div class="ps-card fade-up">
-                <div>
-                    <div class="ps-problem-label">Problem</div>
-                    <div class="ps-problem-text">Complex user journeys that confuse visitors and reduce conversions
+
+            <div class="services-tabs fade-up">
+                <button class="tab-btn active" onclick="switchTab('dev',this)">Full Stack Development</button>
+                <button class="tab-btn" onclick="switchTab('wp',this)">WordPress Solutions</button>
+                <button class="tab-btn" onclick="switchTab('seo',this)">SEO &amp; Content</button>
+                <button class="tab-btn" onclick="switchTab('design',this)">Design &amp; Squarespace</button>
+            </div>
+
+            <div class="tab-panel active" id="tab-dev">
+                <div class="ps-card fade-up">
+                    <div>
+                        <div class="ps-problem-label">Problem</div>
+                        <div class="ps-problem-text">Outdated, slow-loading websites that drive customers away</div>
                     </div>
-                </div>
-                <div>
-                    <div class="ps-solution-label">Solution</div>
-                    <h3>Conversion-Focused UX Design</h3>
-                    <p>Intuitive user experiences that guide visitors exactly where you need them to go, with clear
-                        paths to conversion.</p>
-                </div>
-                <div class="ps-metric"><i class="fas fa-chart-line"></i><span>75% average increase in conversion
-                        rate</span></div>
-                <a href="services.html" class="ps-link">See UX Transformations <i class="fas fa-chevron-right"></i></a>
-            </div>
-            <div class="ps-card fade-up">
-                <div>
-                    <div class="ps-problem-label">Problem</div>
-                    <div class="ps-problem-text">Rigid websites that are costly and time-consuming to update</div>
-                </div>
-                <div>
-                    <div class="ps-solution-label">Solution</div>
-                    <h3>Flexible CMS Integration</h3>
-                    <p>Flexible content management systems that you can easily update yourself, saving time and reducing
-                        ongoing costs.</p>
-                </div>
-                <div class="ps-metric"><i class="fas fa-chart-line"></i><span>85% reduction in content update
-                        time</span></div>
-                <a href="services.html" class="ps-link">View More Projects <i class="fas fa-chevron-right"></i></a>
-            </div>
-        </div>
-
-        <div class="tab-panel" id="tab-wp">
-            <div class="ps-card fade-up">
-
-                <div>
-                    <div class="ps-problem-label">Problem</div>
-                    <div class="ps-problem-text">Generic WordPress themes that are slow, insecure, and hard to manage
+                    <div>
+                        <div class="ps-solution-label">Solution</div>
+                        <h3>High-Performance Web Development</h3>
+                        <p>Blazing-fast custom web apps that load in under 2 seconds, keeping visitors engaged and
+                            improving
+                            search rankings.</p>
                     </div>
+                    <div class="ps-metric"><i class="fas fa-chart-line"></i><span>40% average increase in page session
+                            time</span></div>
+                    <a href="services.html" class="ps-link">Explore Web Projects <i
+                            class="fas fa-chevron-right"></i></a>
                 </div>
-                <div>
-                    <div class="ps-solution-label">Solution</div>
-                    <h3>Custom WordPress Themes</h3>
-                    <p>Pixel-perfect, fully custom WordPress builds without page builders — clean code, fast
-                        performance, a look that's all yours.</p>
-                </div>
-                <div class="ps-metric"><i class="fas fa-chart-line"></i><span>60% faster load time vs. theme-based
-                        sites</span></div>
-                <a href="services.html" class="ps-link">View WordPress Projects <i class="fas fa-chevron-right"></i></a>
-            </div>
-            <div class="ps-card fade-up">
-                <div>
-                    <div class="ps-problem-label">Problem</div>
-                    <div class="ps-problem-text">Broken plugins and security vulnerabilities leaving your site exposed
+                <div class="ps-card fade-up">
+                    <div>
+                        <div class="ps-problem-label">Problem</div>
+                        <div class="ps-problem-text">Complex user journeys that confuse visitors and reduce conversions
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <div class="ps-solution-label">Solution</div>
-                    <h3>WordPress Security &amp; Maintenance</h3>
-                    <p>Hardened setups, regular updates, and ongoing monitoring so your WordPress site runs clean, safe,
-                        reliable 24/7.</p>
-                </div>
-                <div class="ps-metric"><i class="fas fa-chart-line"></i><span>99.9% uptime maintained for managed
-                        sites</span></div>
-                <a href="services.html" class="ps-link">Learn About Maintenance <i class="fas fa-chevron-right"></i></a>
-            </div>
-            <div class="ps-card fade-up">
-                <div>
-                    <div class="ps-problem-label">Problem</div>
-                    <div class="ps-problem-text">WooCommerce stores that struggle to convert browsers into buyers</div>
-                </div>
-                <div>
-                    <div class="ps-solution-label">Solution</div>
-                    <h3>WooCommerce Optimization</h3>
-                    <p>We optimize product pages, checkout flow, and site speed to maximize every visitor into potential
-                        revenue.</p>
-                </div>
-                <div class="ps-metric"><i class="fas fa-chart-line"></i><span>+120% average e-commerce revenue
-                        increase</span></div>
-                <a href="services.html" class="ps-link">Boost My Store <i class="fas fa-chevron-right"></i></a>
-            </div>
-        </div>
-
-        <div class="tab-panel" id="tab-seo">
-            <div class="ps-card fade-up">
-
-                <div>
-                    <div class="ps-problem-label">Problem</div>
-                    <div class="ps-problem-text">Business buried on page 3 while competitors take all the leads</div>
-                </div>
-                <div>
-                    <div class="ps-solution-label">Solution</div>
-                    <h3>Technical SEO &amp; Authority Building</h3>
-                    <p>Deep technical audits, on-page optimization, and link authority strategies engineered to push you
-                        to the top of Google.</p>
-                </div>
-                <div class="ps-metric"><i class="fas fa-chart-line"></i><span>+350% organic traffic growth in 6
-                        months</span></div>
-                <a href="#contact" class="ps-link">Start My SEO Journey <i class="fas fa-chevron-right"></i></a>
-            </div>
-            <div class="ps-card fade-up">
-                <div>
-                    <div class="ps-problem-label">Problem</div>
-                    <div class="ps-problem-text">Generic content that doesn't connect with the target audience</div>
-                </div>
-                <div>
-                    <div class="ps-solution-label">Solution</div>
-                    <h3>Strategic Content Writing</h3>
-                    <p>SEO-optimized, brand-voiced copy that speaks directly to your audience — and naturally converts
-                        readers into clients.</p>
-                </div>
-                <div class="ps-metric"><i class="fas fa-chart-line"></i><span>2.4x increase in time-on-page after
-                        content refresh</span></div>
-                <a href="#contact" class="ps-link">Get Better Content <i class="fas fa-chevron-right"></i></a>
-            </div>
-            <div class="ps-card fade-up">
-                <div>
-                    <div class="ps-problem-label">Problem</div>
-                    <div class="ps-problem-text">High traffic with zero conversions and poor click-through rates</div>
-                </div>
-                <div>
-                    <div class="ps-solution-label">Solution</div>
-                    <h3>Conversion Rate Optimization</h3>
-                    <p>We audit your entire funnel and rewrite, redesign, and restructure every touchpoint to turn
-                        visitors into paying customers.</p>
-                </div>
-                <div class="ps-metric"><i class="fas fa-chart-line"></i><span>75% average increase in conversion
-                        rate</span></div>
-                <a href="#contact" class="ps-link">Optimize My Funnel <i class="fas fa-chevron-right"></i></a>
-            </div>
-        </div>
-
-        <div class="tab-panel" id="tab-design">
-            <div class="ps-card fade-up">
-
-                <div>
-                    <div class="ps-problem-label">Problem</div>
-                    <div class="ps-problem-text">Brand visuals that look amateur and erode client trust</div>
-                </div>
-                <div>
-                    <div class="ps-solution-label">Solution</div>
-                    <h3>Brand Identity &amp; Graphic Design</h3>
-                    <p>From logos to full brand systems — we create visual identities that communicate authority,
-                        consistency, and premium quality.</p>
-                </div>
-                <div class="ps-metric"><i class="fas fa-chart-line"></i><span>3x improvement in brand perception
-                        scores</span></div>
-                <a href="#contact" class="ps-link">Build My Brand <i class="fas fa-chevron-right"></i></a>
-            </div>
-            <div class="ps-card fade-up">
-                <div>
-                    <div class="ps-problem-label">Problem</div>
-                    <div class="ps-problem-text">Squarespace site that looks like a default template everyone ignores
+                    <div>
+                        <div class="ps-solution-label">Solution</div>
+                        <h3>Conversion-Focused UX Design</h3>
+                        <p>Intuitive user experiences that guide visitors exactly where you need them to go, with clear
+                            paths to conversion.</p>
                     </div>
+                    <div class="ps-metric"><i class="fas fa-chart-line"></i><span>75% average increase in conversion
+                            rate</span></div>
+                    <a href="services.html" class="ps-link">See UX Transformations <i
+                            class="fas fa-chevron-right"></i></a>
                 </div>
-                <div>
-                    <div class="ps-solution-label">Solution</div>
-                    <h3>Premium Squarespace Development</h3>
-                    <p>We transform your Squarespace into a unique, high-converting website — completely custom, fully
-                        branded, stunning on every device.</p>
+                <div class="ps-card fade-up">
+                    <div>
+                        <div class="ps-problem-label">Problem</div>
+                        <div class="ps-problem-text">Rigid websites that are costly and time-consuming to update</div>
+                    </div>
+                    <div>
+                        <div class="ps-solution-label">Solution</div>
+                        <h3>Flexible CMS Integration</h3>
+                        <p>Flexible content management systems that you can easily update yourself, saving time and
+                            reducing
+                            ongoing costs.</p>
+                    </div>
+                    <div class="ps-metric"><i class="fas fa-chart-line"></i><span>85% reduction in content update
+                            time</span></div>
+                    <a href="services.html" class="ps-link">View More Projects <i class="fas fa-chevron-right"></i></a>
                 </div>
-                <div class="ps-metric"><i class="fas fa-chart-line"></i><span>50% faster delivery vs. custom web
-                        builds</span></div>
-                <a href="#contact" class="ps-link">Upgrade My Squarespace <i class="fas fa-chevron-right"></i></a>
             </div>
-            <div class="ps-card fade-up">
-                <div>
-                    <div class="ps-problem-label">Problem</div>
-                    <div class="ps-problem-text">Social media visuals that blend in rather than stop the scroll</div>
-                </div>
-                <div>
-                    <div class="ps-solution-label">Solution</div>
-                    <h3>Social Media &amp; Marketing Graphics</h3>
-                    <p>Eye-catching, on-brand graphics for every platform — from Instagram posts to ad creatives —
-                        designed to stop the scroll and drive clicks.</p>
-                </div>
-                <div class="ps-metric"><i class="fas fa-chart-line"></i><span>+180% average engagement on branded
-                        content</span></div>
-                <a href="#contact" class="ps-link">Design My Content <i class="fas fa-chevron-right"></i></a>
-            </div>
-        </div>
 
-        <div class="services-bottom-cta fade-up">
-            <a href="#contact" class="btn-golden">Discuss Your Project <i class="fas fa-arrow-right"></i></a>
+            <div class="tab-panel" id="tab-wp">
+                <div class="ps-card fade-up">
+
+                    <div>
+                        <div class="ps-problem-label">Problem</div>
+                        <div class="ps-problem-text">Generic WordPress themes that are slow, insecure, and hard to
+                            manage
+                        </div>
+                    </div>
+                    <div>
+                        <div class="ps-solution-label">Solution</div>
+                        <h3>Custom WordPress Themes</h3>
+                        <p>Pixel-perfect, fully custom WordPress builds without page builders — clean code, fast
+                            performance, a look that's all yours.</p>
+                    </div>
+                    <div class="ps-metric"><i class="fas fa-chart-line"></i><span>60% faster load time vs. theme-based
+                            sites</span></div>
+                    <a href="services.html" class="ps-link">View WordPress Projects <i
+                            class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="ps-card fade-up">
+                    <div>
+                        <div class="ps-problem-label">Problem</div>
+                        <div class="ps-problem-text">Broken plugins and security vulnerabilities leaving your site
+                            exposed
+                        </div>
+                    </div>
+                    <div>
+                        <div class="ps-solution-label">Solution</div>
+                        <h3>WordPress Security &amp; Maintenance</h3>
+                        <p>Hardened setups, regular updates, and ongoing monitoring so your WordPress site runs clean,
+                            safe,
+                            reliable 24/7.</p>
+                    </div>
+                    <div class="ps-metric"><i class="fas fa-chart-line"></i><span>99.9% uptime maintained for managed
+                            sites</span></div>
+                    <a href="services.html" class="ps-link">Learn About Maintenance <i
+                            class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="ps-card fade-up">
+                    <div>
+                        <div class="ps-problem-label">Problem</div>
+                        <div class="ps-problem-text">WooCommerce stores that struggle to convert browsers into buyers
+                        </div>
+                    </div>
+                    <div>
+                        <div class="ps-solution-label">Solution</div>
+                        <h3>WooCommerce Optimization</h3>
+                        <p>We optimize product pages, checkout flow, and site speed to maximize every visitor into
+                            potential
+                            revenue.</p>
+                    </div>
+                    <div class="ps-metric"><i class="fas fa-chart-line"></i><span>+120% average e-commerce revenue
+                            increase</span></div>
+                    <a href="services.html" class="ps-link">Boost My Store <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+
+            <div class="tab-panel" id="tab-seo">
+                <div class="ps-card fade-up">
+
+                    <div>
+                        <div class="ps-problem-label">Problem</div>
+                        <div class="ps-problem-text">Business buried on page 3 while competitors take all the leads
+                        </div>
+                    </div>
+                    <div>
+                        <div class="ps-solution-label">Solution</div>
+                        <h3>Technical SEO &amp; Authority Building</h3>
+                        <p>Deep technical audits, on-page optimization, and link authority strategies engineered to push
+                            you
+                            to the top of Google.</p>
+                    </div>
+                    <div class="ps-metric"><i class="fas fa-chart-line"></i><span>+350% organic traffic growth in 6
+                            months</span></div>
+                    <a href="#contact" class="ps-link">Start My SEO Journey <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="ps-card fade-up">
+                    <div>
+                        <div class="ps-problem-label">Problem</div>
+                        <div class="ps-problem-text">Generic content that doesn't connect with the target audience</div>
+                    </div>
+                    <div>
+                        <div class="ps-solution-label">Solution</div>
+                        <h3>Strategic Content Writing</h3>
+                        <p>SEO-optimized, brand-voiced copy that speaks directly to your audience — and naturally
+                            converts
+                            readers into clients.</p>
+                    </div>
+                    <div class="ps-metric"><i class="fas fa-chart-line"></i><span>2.4x increase in time-on-page after
+                            content refresh</span></div>
+                    <a href="#contact" class="ps-link">Get Better Content <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="ps-card fade-up">
+                    <div>
+                        <div class="ps-problem-label">Problem</div>
+                        <div class="ps-problem-text">High traffic with zero conversions and poor click-through rates
+                        </div>
+                    </div>
+                    <div>
+                        <div class="ps-solution-label">Solution</div>
+                        <h3>Conversion Rate Optimization</h3>
+                        <p>We audit your entire funnel and rewrite, redesign, and restructure every touchpoint to turn
+                            visitors into paying customers.</p>
+                    </div>
+                    <div class="ps-metric"><i class="fas fa-chart-line"></i><span>75% average increase in conversion
+                            rate</span></div>
+                    <a href="#contact" class="ps-link">Optimize My Funnel <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+
+            <div class="tab-panel" id="tab-design">
+                <div class="ps-card fade-up">
+
+                    <div>
+                        <div class="ps-problem-label">Problem</div>
+                        <div class="ps-problem-text">Brand visuals that look amateur and erode client trust</div>
+                    </div>
+                    <div>
+                        <div class="ps-solution-label">Solution</div>
+                        <h3>Brand Identity &amp; Graphic Design</h3>
+                        <p>From logos to full brand systems — we create visual identities that communicate authority,
+                            consistency, and premium quality.</p>
+                    </div>
+                    <div class="ps-metric"><i class="fas fa-chart-line"></i><span>3x improvement in brand perception
+                            scores</span></div>
+                    <a href="#contact" class="ps-link">Build My Brand <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="ps-card fade-up">
+                    <div>
+                        <div class="ps-problem-label">Problem</div>
+                        <div class="ps-problem-text">Squarespace site that looks like a default template everyone
+                            ignores
+                        </div>
+                    </div>
+                    <div>
+                        <div class="ps-solution-label">Solution</div>
+                        <h3>Premium Squarespace Development</h3>
+                        <p>We transform your Squarespace into a unique, high-converting website — completely custom,
+                            fully
+                            branded, stunning on every device.</p>
+                    </div>
+                    <div class="ps-metric"><i class="fas fa-chart-line"></i><span>50% faster delivery vs. custom web
+                            builds</span></div>
+                    <a href="#contact" class="ps-link">Upgrade My Squarespace <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="ps-card fade-up">
+                    <div>
+                        <div class="ps-problem-label">Problem</div>
+                        <div class="ps-problem-text">Social media visuals that blend in rather than stop the scroll
+                        </div>
+                    </div>
+                    <div>
+                        <div class="ps-solution-label">Solution</div>
+                        <h3>Social Media &amp; Marketing Graphics</h3>
+                        <p>Eye-catching, on-brand graphics for every platform — from Instagram posts to ad creatives —
+                            designed to stop the scroll and drive clicks.</p>
+                    </div>
+                    <div class="ps-metric"><i class="fas fa-chart-line"></i><span>+180% average engagement on branded
+                            content</span></div>
+                    <a href="#contact" class="ps-link">Design My Content <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+
+            <div class="services-bottom-cta fade-up">
+                <a href="#contact" class="btn-golden">Discuss Your Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+
         </div>
     </section>
 
