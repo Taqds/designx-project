@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V950F4PN1B"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-V950F4PN1B');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Development Services in Fort Lauderdale, FL | DesignX</title>
+    <meta name="description"
+        content="Looking for top-rated website development services in Fort Lauderdale, Florida? DesignX builds custom, SEO-driven websites for local businesses in Miami and Broward.">
+    <meta property="og:title" content="Website Development Services in Fort Lauderdale, FL | DesignX">
+    <meta property="og:description"
+        content="Looking for top-rated website development services in Fort Lauderdale, Florida? DesignX builds custom, SEO-driven websites for local businesses in Miami and Broward.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://design-x-web.netlify.app/website-development-services-fort-lauderdale.html">
+    <meta property="og:image" content="https://design-x-web.netlify.app/assets/web_dev_fort_lauderdale_hero.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://design-x-web.netlify.app/website-development-services-fort-lauderdale.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #9d4edd;
+            --secondary: #ff006e;
+            --accent: #3a86ff;
+            --dark: #0b090a;
+            --dark2: #161a1d;
+            --text: #f8f9fa;
+            --muted: #adb5bd;
+            --glass: rgba(255, 255, 255, 0.03);
+            --border: rgba(255, 255, 255, 0.1);
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui;
+        }
+
+        body {
+            background-color: var(--dark);
+            color: var(--text);
+            line-height: 1.7;
+            overflow-x: hidden;
+            font-size: 14px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 5%;
+        }
+
+        h1, h2, h3, h4 {
+            line-height: 1.3;
+            margin-bottom: 25px;
+            color: var(--white);
+        }
+
+        h1 { font-size: 37px; margin-top: 40px; }
+        h2 { font-size: 29px; margin-top: 50px; border-left: 4px solid var(--primary); padding-left: 20px; }
+        h3 { font-size: 21px; margin-top: 40px; margin-bottom: 15px;}
+        h4 { font-size: 18px; margin-top: 25px; margin-bottom: 10px;}
+
+        span.text-gradient {
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(11, 9, 10, 0.85);
+            backdrop-filter: blur(12px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            background: linear-gradient(90deg, #fff, #888);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-links { display: flex; gap: 30px; list-style: none; }
+        .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.9rem; }
+        .nav-cta {
+            background: var(--text);
+            color: var(--dark);
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+
+        .post-header { padding-top: 180px; padding-bottom: 60px; text-align: center; }
+        .post-meta {
+            font-size: 0.85rem;
+            color: var(--muted);
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+        .post-meta i { color: var(--primary); margin-right: 6px; }
+
+        .featured-image-container {
+            width: 100%;
+            height: 450px;
+            border-radius: 30px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            margin-bottom: 60px;
+        }
+        .featured-image-container img { width: 100%; height: 100%; object-fit: cover; }
+
+        .post-content p { margin-bottom: 25px; color: var(--muted); font-size: 1.05rem; }
+        .post-content ul, .post-content ol { margin-bottom: 30px; margin-left: 20px; color: var(--muted); font-size: 1.05rem; }
+        .post-content li { margin-bottom: 12px; }
+        .post-content strong { color: var(--white); }
+
+        .info-box {
+            background: rgba(157, 78, 221, 0.05);
+            border-left: 4px solid var(--primary);
+            padding: 25px;
+            border-radius: 0 15px 15px 0;
+            margin: 40px 0;
+        }
+
+        .info-box p {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        /* FAQ Styling */
+        .faq-section {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        
+        .faq-item {
+            background: var(--dark2);
+            border: 1px solid var(--border);
+            border-radius: 15px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+        
+        .faq-item:hover {
+            border-color: rgba(157, 78, 221, 0.4);
+        }
+
+        .faq-question {
+            padding: 20px 25px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--white);
+        }
+
+        .faq-question i {
+            color: var(--primary);
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            padding: 0 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+            color: var(--muted);
+            font-size: 1rem;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 25px 25px;
+            max-height: 1000px;
+        }
+
+        .blog-cta {
+            background: var(--dark2);
+            border: 1px solid var(--border);
+            padding: 60px 40px;
+            border-radius: 30px;
+            margin: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .blog-cta::before {
+            content: '';
+            position: absolute;
+            top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: radial-gradient(circle, rgba(157, 78, 221, 0.1) 0%, transparent 60%);
+            z-index: 0;
+        }
+        .blog-cta-content { position: relative; z-index: 1; }
+        .blog-cta h2 { border: none; padding: 0; margin-top: 0; font-size: 32px; }
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            color: #fff;
+            padding: 16px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-top: 25px;
+            box-shadow: 0 10px 30px rgba(157, 78, 221, 0.3);
+            transition: 0.3s;
+        }
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(157, 78, 221, 0.5);
+        }
+
+        /* ═══ FOOTER ═══ */
+        footer {
+            background: var(--dark2);
+            padding: 60px 5% 30px;
+        }
+
+        .footer-top {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer-brand p {
+            font-size: .9rem;
+            color: var(--muted);
+            line-height: 1.7;
+            max-width: 280px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 12px;
+            margin-top: 24px;
+        }
+
+        .social-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--glass);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--muted);
+            transition: all .2s;
+            text-decoration: none;
+        }
+
+        .social-icon:hover {
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .footer-col h5 {
+            color: var(--white);
+            font-size: .95rem;
+            margin-bottom: 22px;
+            font-weight: 700;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col li {
+            margin-bottom: 12px;
+        }
+
+        .footer-col a {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: .88rem;
+            transition: color .2s;
+        }
+
+        .footer-col a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer-bottom p {
+            font-size: .9rem;
+            color: var(--muted);
+            margin-bottom: 8px;
+        }
+
+        @media (max-width: 900px) {
+            .nav-links { display: none; }
+            .footer-top { grid-template-columns: 1fr 1fr; }
+        }
+
+        @media (max-width: 600px) {
+            .footer-top { grid-template-columns: 1fr; }
+            h1 { font-size: 30px; }
+            h2 { font-size: 24px; }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-logo">DesignX</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="process.html">Process</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="index.html#contact" class="nav-cta">Start Your Project ↗</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="post-header">
+            <div class="post-meta">
+                <span><i class="fas fa-calendar"></i> March 13, 2026</span>
+                <span><i class="fas fa-user"></i> By SEO Expert Team</span>
+                <span><i class="fas fa-folder"></i> Web Development</span>
+            </div>
+            <h1><span class="text-gradient">Website Development Services in Fort Lauderdale</span>, Florida</h1>
+        </header>
+
+        <div class="featured-image-container">
+            <img src="assets/web_dev_fort_lauderdale_hero.png" alt="Website Development Services in Fort Lauderdale">
+        </div>
+
+        <article class="post-content">
+            <p>If you're operating a business in South Florida, you already know how fiercely competitive the local market has become. From the bustling streets of Las Olas Boulevard to the sprawling tech hubs emerging across Broward County, visibility is everything. Finding reliable <strong>Website Development Services in Fort Lauderdale, Florida</strong> is no longer just a checkbox on your marketing list—it is the foundational pillar of your brand's entire digital growth strategy.</p>
+
+            <p>As consumer behavior shifts entirely toward digital-first interactions, your website serves as your 24/7 digital storefront, your most persistent salesperson, and the first impression you make on potential clients. A generic, slow-loading template won't cut it anymore. What you need is a robust, hyper-optimized digital experience crafted by an expert <strong>web development company in Fort Lauderdale</strong>.</p>
+
+            <div class="info-box">
+                <p><i class="fas fa-lightbulb" style="color: var(--primary); margin-right: 10px;"></i><strong>Did You Know?</strong> Research indicates that 88% of local searches on mobile devices lead to a call or visit within 24 hours. If your website isn't optimized for both speed and local intent, you are actively losing revenue to competitors.</p>
+            </div>
+
+            <h2>Why Businesses in Fort Lauderdale Need Professional Websites</h2>
+            
+            <p>Fort Lauderdale is often referred to as the "Venice of America," teeming with luxury real estate, tourism, maritime industries, and a rapidly expanding startup ecosystem. Businesses operating here face unique challenges and opportunities that only a custom-tailored <strong>Florida website design agency</strong> can address.</p>
+
+            <p>A professional website acts as the central hub for all your inbound marketing efforts. While social media algorithms change and ad costs rise, your website is the one digital asset you truly own and control. For a Fort Lauderdale business, investing in top-tier web development addresses several critical needs:</p>
+
+            <ul>
+                <li><strong>First Impressions & Credibility:</strong> Visitors form an opinion about your business in less than 50 milliseconds. A sleek, modern user interface (UI) immediately establishes trust and authority.</li>
+                <li><strong>Technical Performance:</strong> Florida’s diverse population uses a myriad of devices. A professional <strong>responsive web design in South Florida</strong> ensures flawless performance on desktops, tablets, and mobile phones alike.</li>
+                <li><strong>Conversion Optimization:</strong> It’s not enough to just get traffic. Professional developers implement strategic User Experience (UX) flows that naturally guide visitors toward taking action—be it booking a consultation, buying a product, or giving you a call.</li>
+                <li><strong>Foundation for SEO:</strong> Search Engine Optimization begins at the code level. A beautifully designed site built on messy code will never rank well. Professional development ensures a clean, crawlable architecture.</li>
+            </ul>
+
+            <h2>Key Web Development Services for Local Businesses</h2>
+
+            <p>As a leading agency, we understand that there is no "one-size-fits-all" solution. The requirements for an upscale boutique in Miami differ wildly from a maritime logistics company based in Port Everglades. That’s why we offer a comprehensive suite of services precisely engineered for your specific operational needs.</p>
+
+            <h3>1. Custom Web Design & Development</h3>
+            <p>We build highly customized, from-scratch digital platforms. Unlike cheap offshore builders who slap your logo on a pre-made template, our <strong>custom website design in Broward County</strong> focuses on high-performance infrastructure, immersive glassmorphic UI, dynamic animations, and scalable architecture.</p>
+
+            <h3>2. WordPress Development in Fort Lauderdale</h3>
+            <p>WordPress powers over 40% of the internet, but standard out-of-the-box setups are incredibly slow. As a dedicated <strong>WordPress developer in Fort Lauderdale</strong>, we specialize in high-performance implementations, custom theme development, and secure plugin integrations that allow you to manage your content effortlessly without sacrificing load speed.</p>
+
+            <h3>3. E-commerce Web Development (Miami & Fort Lauderdale)</h3>
+            <p>Whether you're utilizing Shopify, WooCommerce, or a custom build, our <strong>eCommerce web development for Miami</strong> and Fort Lauderdale brands ensures secure payment gateways, optimized product pages, rapid load times, and frictionless checkout processes designed to maximize your return on investment (ROI).</p>
+
+            <h3>4. Web Application Development</h3>
+            <p>For businesses requiring complex logic—such as client portals, custom booking engines, or intricate CRM integrations—we provide robust web application development capabilities using modern tech stacks to handle heavy data lifting securely and efficiently.</p>
+
+            <h2>Benefits of Hiring a Local Web Development Company</h2>
+
+            <p>In an era of remote work, you might wonder why you shouldn't just outsource your project to the cheapest bidder thousands of miles away. The answer boils down to market intelligence, communication, and accountability.</p>
+
+            <p>Partnering with a <strong>professional web developer in Fort Lauderdale, FL</strong> provides distinct advantages that remote freelancers simply cannot match:</p>
+
+            <ul>
+                <li><strong>Understanding the Local Market:</strong> We live and breathe South Florida. We understand the specific demographics, seasonal shifts, and cultural nuances of Fort Lauderdale and Miami. This insight directly influences the design, copywriting, and user flow of your website.</li>
+                <li><strong>Face-to-Face Accountability:</strong> You know exactly who is working on your project. If you need to meet for a strategy session or to review a wireframe, a local agency is accessible, providing peace of mind and transparent communication.</li>
+                <li><strong>Synergistic Local SEO:</strong> A local agency intrinsically understands the geographical targeting necessary to rank for highly competitive regional keywords, avoiding the disconnect that often happens with out-of-state marketers.</li>
+                <li><strong>Networking and Connections:</strong> Local agencies often have established networks containing reliable photographers, videographers, and PR specialists in the area, offering you a holistic digital growth pipeline.</li>
+            </ul>
+
+            <img src="assets/design_ux_visual_premium_1772742325301.png" alt="Dynamic Web Development Process" style="width: 100%; border-radius: 20px; margin: 30px 0; border: 1px solid var(--border);">
+
+            <h2>Why Our Agency Is Better Than Competitors</h2>
+
+            <p>Search "Website Development Services in Fort Lauderdale, Florida" and you will instantly find dozens of agencies making identical promises. So, what actually separates DesignX from the rest of the pack?</p>
+
+            <p>For us, development is not just about writing code; it's about <strong>business acceleration</strong>. The majority of agencies build a pretty website, hand over the keys, and disappear. Or worse, they construct websites using bloated page builders that look fine on the surface but score terribly on Google’s Core Web Vitals metrics.</p>
+
+            <p>We pride ourselves on being the <strong>best website development service in Florida</strong> because we employ an integrated, data-driven methodology:</p>
+
+            <ul>
+                <li><strong>Performance Obsession:</strong> We write aggressively optimized, clean code ensuring millisecond load times. A fast website dramatically lowers bounce rates and significantly boosts both conversions and SEO rankings.</li>
+                <li><strong>Premium Tier Aesthetics:</strong> We don't do "good enough." We employ high-end design principles—dark modes, vibrant accent colors, subtle micro-animations, and modern typography—that create an unmistakable premium "wow" factor for your users.</li>
+                <li><strong>Security & Scalability:</strong> Your website is fortified against vulnerabilities from day one, built on scalable infrastructure that grows seamlessly alongside your revenue.</li>
+                <li><strong>SEO-First Architecture:</strong> We build search engine optimization into the very DNA of the site. From semantic HTML5 to optimized asset delivery, your site launches ready to dominate Google search results.</li>
+            </ul>
+
+            <h2>Website Development Process</h2>
+
+            <p>The success of any major digital overhaul relies heavily on an organized, transparent execution framework. Our proven development lifecycle removes the stress and ambiguity from launching your new platform.</p>
+
+            <ol>
+                <li><strong>Discovery & Strategy:</strong> We begin with a deep dive into your business goals, target audience, and local competitors. We map out a tailored strategy architecture that aligns with your objectives.</li>
+                <li><strong>UI/UX Design & Prototyping:</strong> We develop wireframes and stunning visual prototypes. You get a fully interactive preview of your site's look and feel, ensuring our vision perfectly matches your brand identity before a single line of code is written.</li>
+                <li><strong>Full-Stack Development:</strong> Our engineers build your site using the latest frameworks. We integrate necessary CMS platforms, APIs, and databases, ensuring total mobile responsiveness and peak performance across all browsers.</li>
+                <li><strong>Quality Assurance & Testing:</strong> We stress test everything. Form submissions, payment gateways, mobile layouts, and page speeds are rigorously checked to ensure a flawless launch.</li>
+                <li><strong>Launch & Ongoing Growth:</strong> We push your site live and monitor for stability. From there, we migrate into strategic Local SEO optimization and continuous performance maintenance.</li>
+            </ol>
+
+            <h2>Local SEO Advantages for Florida Businesses</h2>
+
+            <p>Possessing an incredible website does nothing for your bottom line if your target audience can’t find it. Because Google handles over 8.5 billion searches a day, capturing local intent is the most lucrative action a Fort Lauderdale business can take.</p>
+
+            <p>When you integrate <strong>Local SEO in Fort Lauderdale</strong> concurrently with web development, the compounding benefits are immense. We implement localized schema markup, optimized meta structures, location-specific landing pages, and Google Business Profile synergy directly into the website's framework. This deliberate engineering signals to Google exactly where you are and who you serve.</p>
+
+            <p>Whether someone is searching for <strong>"Web design services Miami"</strong> or hunting for a local attorney in Broward County, an SEO-optimized site guarantees you show up in the "Local Pack" (the map results), skipping the line and putting your business directly in front of highly-motivated, ready-to-buy customers.</p>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h2>FAQs About Website Development in Fort Lauderdale</h2>
+                <p>We know that commissioning a new website is a significant decision. Here are straight answers to the most common questions we receive from South Florida businesses.</p>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How much does a custom website cost in Fort Lauderdale?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Website pricing varies entirely on scope, functionality, and customization. A basic, high-performance brochure site may start around $3,000, while a robust e-commerce platform or custom application can range from $10,000 to $25,000+. We provide transparent, flat-rate quotes after our initial discovery call, ensuring no hidden fees.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How long does it take to design and develop a new website?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Typically, a standard custom website takes between 4 to 8 weeks from the initial kickoff meeting to final deployment. More complex projects requiring custom logic, intricate WordPress development, or massive data migrations may take 10 to 14 weeks.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Do you provide SEO services with your web design?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. Every site we build is engineered with technical SEO best practices (speed, mobile-optimization, meta tags). Furthermore, we offer comprehensive, ongoing Local SEO services to ensure you dominate Google's search rankings in Fort Lauderdale and Miami.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Will I be able to update the website myself?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We specialize in building user-friendly Content Management Systems (CMS) tailored to your team's technical comfort level. Once launched, we provide personalized training so you can easily update text, change images, and publish new blog posts without needing to write a single line of code.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Do you offer website maintenance and hosting?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer premium, highly secure hosting and ongoing maintenance packages. We handle daily backups, software updates, security monitoring, and technical troubleshooting so you can focus entirely on running your business.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-cta">
+                <div class="blog-cta-content">
+                    <h2>Ready to Dominate the <span class="text-gradient">South Florida Market?</span></h2>
+                    <p style="font-size: 1.15rem; margin-top: 15px; margin-bottom: 5px;">Stop losing customers to competitors with better-looking websites.</p>
+                    <p style="font-size: 1.05rem;">Partner with the premier web development experts in Fort Lauderdale and watch your revenue grow.</p>
+                    <a href="index.html#contact" class="cta-btn">Claim Your Free Website Strategy Audit ↗</a>
+                </div>
+            </div>
+
+        </article>
+    </div>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="footer-logo">DesignX</div>
+                <p>Fort Lauderdale's trusted web design and development agency. We build high-performance websites,
+                    deliver expert local SEO, and create designs that help South Florida businesses grow online.</p>
+                <p style="margin-top:12px;font-size:12px;color:var(--muted);"><i class="fas fa-map-marker-alt"
+                        style="color:var(--primary);margin-right:4px;"></i> Fort Lauderdale, FL 33301 &nbsp;|&nbsp;
+                    Serving all of South Florida</p>
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-behance"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h5>Services</h5>
+                <ul>
+                    <li><a href="services.html">Website Development</a></li>
+                    <li><a href="services.html">WordPress Development</a></li>
+                    <li><a href="services.html">Local SEO Services</a></li>
+                    <li><a href="services.html">Squarespace Design</a></li>
+                    <li><a href="services.html">Content Writing</a></li>
+                    <li><a href="services.html">Graphic Design</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="process.html">Process</a></li>
+                    <li><a href="results.html">Results</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Contact</h5>
+                <ul>
+                    <li><a href="mailto:oxana@foxylabny.com">oxana@foxylabny.com</a></li>
+                    <li><a href="tel:+17188075262">+1 718 807 5262</a></li>
+                    <li><a href="index.html#contact">Free Consultation</a></li>
+                    <li><a href="index.html#contact">Get a Quote</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 <span>DesignX</span>. Fort Lauderdale, FL. All rights reserved.</p>
+            <p style="font-size:.82rem;color:var(--muted);">Web Design · Development · SEO · Fort Lauderdale, Florida
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Toggle Script
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentNode;
+                
+                // Check if already active
+                const isActive = item.classList.contains('active');
+                
+                // Close all items
+                document.querySelectorAll('.faq-item').forEach(faq => {
+                    faq.classList.remove('active');
+                });
+                
+                // If it wasn't active, open it
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
