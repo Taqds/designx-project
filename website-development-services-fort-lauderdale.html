@@ -21,7 +21,7 @@
         content="Looking for top-rated website development services in Fort Lauderdale, Florida? DesignX builds custom, SEO-driven websites for local businesses in Miami and Broward.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://design-x-web.netlify.app/website-development-services-fort-lauderdale.html">
-    <meta property="og:image" content="https://design-x-web.netlify.app/assets/web_dev_fort_lauderdale_hero.png">
+    <meta property="og:image" content="https://design-x-web.netlify.app/assets/design_ux_visual_premium_1772742325301.png">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="canonical" href="https://design-x-web.netlify.app/website-development-services-fort-lauderdale.html">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -55,27 +55,42 @@
         }
 
         .container {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 0 5%;
         }
 
-        h1, h2, h3, h4 {
+        h1,
+        h2,
+        h3,
+        h4 {
             line-height: 1.3;
             margin-bottom: 25px;
             color: var(--white);
         }
 
-        h1 { font-size: 37px; margin-top: 40px; }
-        h2 { font-size: 29px; margin-top: 50px; border-left: 4px solid var(--primary); padding-left: 20px; }
-        h3 { font-size: 21px; margin-top: 40px; margin-bottom: 15px;}
-        h4 { font-size: 18px; margin-top: 25px; margin-bottom: 10px;}
+        h1 {
+            font-size: 37px;
+            margin-top: 40px;
+        }
 
-        span.text-gradient {
-            background: linear-gradient(90deg, var(--primary), var(--secondary));
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
+        h2 {
+            font-size: 29px;
+            margin-top: 50px;
+            border-left: 4px solid var(--primary);
+            padding-left: 20px;
+        }
+
+        h3 {
+            font-size: 21px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            font-size: 18px;
+            margin-top: 25px;
+            margin-bottom: 10px;
         }
 
         nav {
@@ -102,8 +117,18 @@
             -webkit-text-fill-color: transparent;
         }
 
-        .nav-links { display: flex; gap: 30px; list-style: none; }
-        .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.9rem; }
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
         .nav-cta {
             background: var(--text);
             color: var(--dark);
@@ -114,53 +139,581 @@
             font-size: 0.85rem;
         }
 
-        .post-header { padding-top: 180px; padding-bottom: 60px; text-align: center; }
-        .post-meta {
-            font-size: 0.85rem;
-            color: var(--muted);
-            margin-bottom: 20px;
+        /* HERO */
+        .hero {
+            min-height: 100vh;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 25px;
-        }
-        .post-meta i { color: var(--primary); margin-right: 6px; }
-
-        .featured-image-container {
-            width: 100%;
-            height: 450px;
-            border-radius: 30px;
+            align-items: center;
+            padding: 120px 5% 80px;
+            position: relative;
             overflow: hidden;
-            border: 1px solid var(--border);
-            margin-bottom: 60px;
         }
-        .featured-image-container img { width: 100%; height: 100%; object-fit: cover; }
 
-        .post-content p { margin-bottom: 25px; color: var(--muted); font-size: 1.05rem; }
-        .post-content ul, .post-content ol { margin-bottom: 30px; margin-left: 20px; color: var(--muted); font-size: 1.05rem; }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -20%;
+            width: 700px;
+            height: 700px;
+            background: radial-gradient(circle, rgba(157, 78, 221, .2) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(255, 101, 132, .15) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 10s ease-in-out infinite reverse;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) }
+            50% { transform: translateY(-30px) }
+        }
+
+        .hero-content {
+            max-width: 650px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(157, 78, 221, .15);
+            border: 1px solid rgba(157, 78, 221, .3);
+            color: var(--primary);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: .8rem;
+            font-weight: 600;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.2rem, 4.8vw, 3.5rem);
+            font-weight: 900;
+            line-height: 1.15;
+            margin-bottom: 20px;
+            margin-top: 0;
+            padding: 0;
+            border: none;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: var(--muted);
+            line-height: 1.75;
+            margin-bottom: 36px;
+            max-width: 540px;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            color: #fff;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: transform .2s, box-shadow .2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 40px rgba(157, 78, 221, .4);
+        }
+
+        .btn-secondary {
+            border: 2px solid rgba(157, 78, 221, .5);
+            color: var(--primary);
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: all .2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(157, 78, 221, .1);
+            border-color: var(--primary);
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stat-num {
+            font-size: 2rem;
+            font-weight: 900;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stat-label {
+            font-size: .8rem;
+            color: var(--muted);
+            font-weight: 500;
+            margin-top: 2px;
+        }
+
+        .hero-visual {
+            position: absolute;
+            right: 5%;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .hero-card {
+            background: var(--dark2);
+            border: 1px solid rgba(157, 78, 221, .2);
+            border-radius: 16px;
+            padding: 20px 24px;
+            min-width: 240px;
+        }
+
+        .hero-card:nth-child(2) { transform: translateX(30px); }
+
+        .hero-card-icon { font-size: 1.5rem; margin-bottom: 10px; }
+
+        .hero-card h4 {
+            font-size: .95rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+            border: none;
+            padding: 0;
+            margin-top: 0;
+        }
+
+        .hero-card p {
+            font-size: .78rem;
+            color: var(--muted);
+            margin: 0;
+        }
+
+        .post-content p {
+            margin-bottom: 25px;
+            color: var(--muted);
+            font-size: 1.05rem;
+        }
+
+        .post-content ul,
+        .post-content ol {
+            margin-bottom: 30px;
+            margin-left: 20px;
+            color: var(--muted);
+            font-size: 1.05rem;
+        }
+
         .post-content li { margin-bottom: 12px; }
+
         .post-content strong { color: var(--white); }
 
-        .info-box {
-            background: rgba(157, 78, 221, 0.05);
-            border-left: 4px solid var(--primary);
-            padding: 25px;
-            border-radius: 0 15px 15px 0;
-            margin: 40px 0;
-        }
-
-        .info-box p {
-            margin: 0;
-            font-size: 1rem;
-            font-weight: 500;
-        }
-
-        /* FAQ Styling */
-        .faq-section {
+        /* GRID CARDS */
+        .problems-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
             margin-top: 50px;
             margin-bottom: 50px;
         }
-        
+
+        .problem-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 24px;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            transition: all 0.3s ease;
+        }
+
+        .problem-card:hover {
+            transform: translateX(10px);
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(157, 78, 221, 0.3);
+        }
+
+        .problem-icon-box {
+            flex-shrink: 0;
+            width: 54px;
+            height: 54px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            background: rgba(157, 78, 221, 0.15);
+            color: var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .problem-card:hover .problem-icon-box {
+            background: var(--primary);
+            color: #fff;
+            transform: scale(1.1);
+        }
+
+        .problem-content h3 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--white);
+            margin-top: 0;
+            border: none;
+            padding: 0;
+        }
+
+        .problem-content p {
+            font-size: 13px !important;
+            color: var(--muted) !important;
+            line-height: 1.6;
+            margin: 0 !important;
+        }
+
+        /* ABOUT SECTION */
+        .about-section { display: grid; grid-template-columns: 1fr; gap: 50px; margin-bottom: 70px; margin-top: 50px; }
+        .about-text p { font-size: 15px; color: var(--muted) !important; margin-bottom: 24px; line-height: 1.8; }
+        .insight-card { background: linear-gradient(135deg, rgba(157, 78, 221, 0.1), rgba(255, 101, 132, 0.05)); border: 1px solid rgba(157, 78, 221, 0.2); border-radius: 20px; padding: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 20px; height: 100%; box-shadow: 0 10px 40px rgba(0,0,0,0.2); }
+        .insight-icon { width: 70px; height: 70px; flex-shrink: 0; background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: #fff; box-shadow: 0 5px 20px rgba(157, 78, 221, 0.4); }
+        .insight-content h4 { margin-top: 0; margin-bottom: 12px; font-size: 1.35rem; color: var(--white); font-weight: 800; border: none; padding: 0; }
+        .insight-content p { margin: 0; font-size: 1.05rem; color: var(--muted); line-height: 1.7; }
+        .section-separator { width: 100%; height: 1px; background: linear-gradient(90deg, transparent, rgba(157, 78, 221, 0.3), transparent); margin: 60px 0; }
+        @media (min-width: 900px) { .about-section { grid-template-columns: 1fr 1fr; } }
+
+        /* PROCESS ZIGZAG */
+        .process-timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 40px auto 60px;
+            padding: 0;
+        }
+
+        .process-timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--primary), var(--secondary));
+            transform: translateX(-50%);
+            z-index: 0;
+        }
+
+        .zig-step {
+            display: grid;
+            grid-template-columns: 1fr 120px 1fr;
+            align-items: stretch;
+            margin-bottom: 20px;
+        }
+
+        .zig-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 28px 30px;
+            width: 100%;
+            transition: transform .3s;
+        }
+
+        .zig-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(157, 78, 221, 0.3);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .zig-card strong {
+            color: var(--white);
+            font-size: 1.1rem;
+            display: block;
+            margin-bottom: 8px;
+            border: none;
+            padding: 0;
+        }
+
+        .zig-card p {
+            font-size: 14px !important;
+            color: var(--muted) !important;
+            line-height: 1.6;
+            margin: 0 !important;
+        }
+
+        .zig-num-wrap {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 24px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .zig-num {
+            width: 44px;
+            height: 44px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: .9rem;
+            color: #fff;
+            box-shadow: 0 0 0 6px var(--dark);
+        }
+
+        .zig-empty { width: 100%; }
+
+        @media (max-width: 768px) {
+            .process-timeline::before { left: 40px; }
+            .zig-step { grid-template-columns: 80px 1fr !important; }
+            .zig-empty { display: none; }
+            .zig-card { padding: 20px; }
+        }
+
+        /* SECTION COMMONS */
+        section { padding: 80px 5%; }
+        .section-label {
+            display: inline-block;
+            background: rgba(157, 78, 221, .1);
+            border: 1px solid rgba(157, 78, 221, .25);
+            color: var(--primary);
+            padding: 6px 18px;
+            border-radius: 50px;
+            font-size: .75rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .section-header { text-align: center; }
+        .section-header h2 {
+            font-size: 29px;
+            font-weight: 800;
+            line-height: 1.25;
+            margin-bottom: 18px;
+            border: none;
+            padding: 0;
+        }
+
+        .section-header h2 span {
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .grid-center { display: flex; justify-content: center; }
+
+        /* TESTIMONIALS */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 28px;
+            margin-top: 50px;
+        }
+
+        .testimonial-card {
+            background: var(--dark2);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 36px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .stars { color: #FBBF24; font-size: .9rem; margin-bottom: 18px; letter-spacing: 2px; }
+
+        .testimonial-card p {
+            font-size: 14px;
+            color: var(--text);
+            line-height: 1.7;
+            margin-bottom: 24px;
+            font-style: italic;
+        }
+
+        .testimonial-author { display: flex; align-items: center; gap: 14px; }
+        .author-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1rem;
+            color: #fff;
+        }
+
+        .author-info h5 {
+            font-size: .9rem;
+            font-weight: 700;
+            color: var(--white);
+            margin: 0 0 2px 0;
+            border: none;
+            padding: 0;
+        }
+
+        .author-info span { font-size: .78rem; color: var(--muted); }
+
+        /* CONTACT SECTION */
+        .contact-section {
+            padding: 100px 5%;
+            background: linear-gradient(to bottom, var(--dark), var(--dark2));
+            margin-top: 50px;
+        }
+
+        .contact-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .contact-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            border: none;
+            padding: 0;
+        }
+
+        .contact-info p { color: var(--muted); font-size: 1.05rem; }
+
+        .contact-methods {
+            margin: 40px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .method-item { display: flex; gap: 16px; align-items: center; }
+
+        .method-icon {
+            width: 44px;
+            height: 44px;
+            background: rgba(157, 78, 221, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+        }
+
+        .method-item h5 { font-size: 0.9rem; margin-bottom: 2px; margin-top: 0; border: none; padding: 0; }
+
+        .method-item p { font-size: 0.85rem; color: var(--muted); margin: 0; }
+
+        .trust-badges { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 30px; }
+
+        .badge-item {
+            font-size: 0.75rem;
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 600;
+        }
+
+        .contact-form-wrapper {
+            background: var(--dark2);
+            padding: 40px;
+            border-radius: 24px;
+            border: 1px solid var(--border);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .lead-form { display: flex; flex-direction: column; gap: 20px; }
+
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+        .form-group { display: flex; flex-direction: column; gap: 8px; }
+
+        .form-group label { font-size: 0.85rem; font-weight: 600; color: var(--text); }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border);
+            padding: 12px 16px;
+            border-radius: 12px;
+            color: #fff;
+            font-family: inherit;
+            transition: all 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: rgba(157, 78, 221, 0.08);
+            box-shadow: 0 0 15px rgba(157, 78, 221, 0.2);
+        }
+
+        .form-status { margin-top: 15px; font-size: 0.9rem; text-align: center; min-height: 20px; }
+
+        @media (max-width: 900px) {
+            .contact-container { grid-template-columns: 1fr; gap: 40px; }
+            .contact-info h2 { font-size: 2.2rem; }
+        }
+
+        @media (max-width: 500px) { .form-row { grid-template-columns: 1fr; } }
+
+        /* FAQ Styling */
+        .faq-section { margin-top: 50px; margin-bottom: 50px; }
         .faq-item {
             background: var(--dark2);
             border: 1px solid var(--border);
@@ -169,65 +722,32 @@
             overflow: hidden;
             transition: 0.3s;
         }
-        
-        .faq-item:hover {
-            border-color: rgba(157, 78, 221, 0.4);
-        }
+        .faq-item:hover { border-color: rgba(157, 78, 221, 0.4); }
+        .faq-question { padding: 20px 25px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; font-size: 1.1rem; color: var(--white); }
+        .faq-question i { color: var(--primary); transition: transform 0.3s; }
+        .faq-item.active .faq-question i { transform: rotate(180deg); }
+        .faq-answer { padding: 0 25px; max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.4s ease; color: var(--muted); font-size: 1rem; }
+        .faq-item.active .faq-answer { padding: 0 25px 25px; max-height: 1000px; }
 
-        .faq-question {
-            padding: 20px 25px;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-weight: 600;
-            font-size: 1.1rem;
-            color: var(--white);
-        }
+        /* DROPDOWN */
+        .dropdown:hover .dropdown-menu { display: flex !important; animation: fadeInUp 0.3s ease; }
+        .dropdown-menu { display: none; position: absolute; top: 100%; left: 0; background: rgba(13, 13, 26, 0.95); backdrop-filter: blur(20px); border: 1px solid rgba(108, 99, 255, 0.2); border-radius: 12px; padding: 15px; min-width: 220px; list-style: none; flex-direction: column; gap: 10px; z-index: 1001; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); }
+        .dropdown-menu li { width: 100%; text-align: left !important; }
+        .dropdown-menu a { color: var(--muted) !important; font-size: 0.9rem !important; transition: color 0.3s; display: block; padding: 5px 0; }
+        .dropdown-menu a:hover { color: var(--primary) !important; }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
-        .faq-question i {
-            color: var(--primary);
-            transition: transform 0.3s;
-        }
-
-        .faq-item.active .faq-question i {
-            transform: rotate(180deg);
-        }
-
-        .faq-answer {
-            padding: 0 25px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.4s ease, padding 0.4s ease;
-            color: var(--muted);
-            font-size: 1rem;
-        }
-
-        .faq-item.active .faq-answer {
-            padding: 0 25px 25px;
-            max-height: 1000px;
-        }
-
-        .blog-cta {
-            background: var(--dark2);
-            border: 1px solid var(--border);
-            padding: 60px 40px;
-            border-radius: 30px;
-            margin: 80px 0;
+        /* FINAL CTA */
+        .final-cta {
+            background: linear-gradient(135deg, rgba(108, 99, 255, .15) 0%, rgba(255, 101, 132, .1) 100%);
+            border-top: 1px solid rgba(108, 99, 255, .2);
+            border-bottom: 1px solid rgba(108, 99, 255, .2);
             text-align: center;
-            position: relative;
-            overflow: hidden;
+            padding: 120px 5%;
         }
-        .blog-cta::before {
-            content: '';
-            position: absolute;
-            top: -50%; left: -50%;
-            width: 200%; height: 200%;
-            background: radial-gradient(circle, rgba(157, 78, 221, 0.1) 0%, transparent 60%);
-            z-index: 0;
-        }
-        .blog-cta-content { position: relative; z-index: 1; }
-        .blog-cta h2 { border: none; padding: 0; margin-top: 0; font-size: 32px; }
+        .final-cta h2 { font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 900; margin-bottom: 20px; border: none; padding: 0; }
+        .final-cta h2 span { background: linear-gradient(90deg, var(--primary), var(--secondary)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+        .final-cta p { font-size: 1.1rem; color: var(--muted); max-width: 560px; margin: 0 auto 40px; line-height: 1.7; }
         .cta-btn {
             display: inline-block;
             background: linear-gradient(90deg, var(--primary), var(--secondary));
@@ -237,121 +757,25 @@
             text-decoration: none;
             font-weight: 700;
             font-size: 1.1rem;
-            margin-top: 25px;
             box-shadow: 0 10px 30px rgba(157, 78, 221, 0.3);
             transition: 0.3s;
         }
-        .cta-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(157, 78, 221, 0.5);
-        }
+        .cta-btn:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(157, 78, 221, 0.5); }
 
-        /* ═══ FOOTER ═══ */
-        footer {
-            background: var(--dark2);
-            padding: 60px 5% 30px;
-        }
-
-        .footer-top {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 40px;
-            margin-bottom: 50px;
-            max-width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .footer-brand p {
-            font-size: .9rem;
-            color: var(--muted);
-            line-height: 1.7;
-            max-width: 280px;
-        }
-
-        .footer-social {
-            display: flex;
-            gap: 12px;
-            margin-top: 24px;
-        }
-
-        .social-icon {
-            width: 36px;
-            height: 36px;
-            background: var(--glass);
-            border: 1px solid var(--border);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--muted);
-            transition: all .2s;
-            text-decoration: none;
-        }
-
-        .social-icon:hover {
-            color: var(--primary);
-            border-color: var(--primary);
-        }
-
-        .footer-col h5 {
-            color: var(--white);
-            font-size: .95rem;
-            margin-bottom: 22px;
-            font-weight: 700;
-        }
-
-        .footer-col ul {
-            list-style: none;
-        }
-
-        .footer-col li {
-            margin-bottom: 12px;
-        }
-
-        .footer-col a {
-            color: var(--muted);
-            text-decoration: none;
-            font-size: .88rem;
-            transition: color .2s;
-        }
-
-        .footer-col a:hover {
-            color: var(--primary);
-        }
-
-        .footer-bottom {
-            padding-top: 30px;
-            border-top: 1px solid var(--border);
-            text-align: center;
-            max-width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .footer-bottom p {
-            font-size: .9rem;
-            color: var(--muted);
-            margin-bottom: 8px;
-        }
-
-        @media (max-width: 900px) {
-            .nav-links { display: none; }
-            .footer-top { grid-template-columns: 1fr 1fr; }
-        }
-
-        @media (max-width: 600px) {
-            .footer-top { grid-template-columns: 1fr; }
-            h1 { font-size: 30px; }
-            h2 { font-size: 24px; }
-        }
-    
-        .dropdown:hover .dropdown-menu { display: flex !important; animation: fadeInUp 0.3s ease; }
-        .dropdown-menu { display: none; position: absolute; top: 100%; left: 0; background: rgba(13, 13, 26, 0.95); backdrop-filter: blur(20px); border: 1px solid rgba(108, 99, 255, 0.2); border-radius: 12px; padding: 15px; min-width: 220px; list-style: none; flex-direction: column; gap: 10px; z-index: 1001; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-        .dropdown-menu li { width: 100%; text-align: left !important; }
-        .dropdown-menu a { color: var(--muted) !important; font-size: 0.9rem !important; transition: color 0.3s; display: block; padding: 5px 0; }
-        .dropdown-menu a:hover { color: var(--primary) !important; }
-        @keyframes fadeInUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        /* FOOTER */
+        footer { background: var(--dark2); padding: 60px 5% 30px; }
+        .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 50px; max-width: 1200px; margin-left: auto; margin-right: auto; }
+        .footer-logo { font-size: 1.8rem; font-weight: 900; background: linear-gradient(90deg, #fff, #888); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; display: inline-block; margin-bottom: 16px; }
+        .footer-brand p { font-size: .9rem; color: var(--muted); line-height: 1.7; max-width: 280px; }
+        .footer-social { display: flex; gap: 12px; margin-top: 24px; }
+        .social-icon { width: 36px; height: 36px; background: var(--glass); border: 1px solid var(--border); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--muted); transition: all .2s; text-decoration: none; }
+        .social-icon:hover { color: var(--primary); border-color: var(--primary); }
+        .footer-col h5 { color: var(--white); font-size: .95rem; margin-bottom: 22px; font-weight: 700; }
+        .footer-col ul { list-style: none; }
+        .footer-col li { margin-bottom: 12px; }
+        .footer-col a { color: var(--muted); text-decoration: none; font-size: .88rem; transition: color .2s; }
+        .footer-col a:hover { color: var(--primary); }
+        .footer-bottom { border-top: 1px solid var(--border); padding-top: 30px; text-align: center; max-width: 1200px; margin: 0 auto; }
     </style>
 </head>
 
@@ -364,6 +788,7 @@
                 <a href="services.html" style="display: flex; align-items: center; gap: 5px;">Our Services <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown-menu">
                     <li><a href="web-design-company-miami.html">Web Design Miami</a></li>
+                    <li><a href="website-development-services-fort-lauderdale.html">Web Design Fort Lauderdale</a></li>
                 </ul>
             </li>
             <li><a href="process.html">Process</a></li>
@@ -376,249 +801,294 @@
         </div>
     </nav>
 
-    <div class="container">
-        <header class="post-header">
-            <div class="post-meta">
-                <span><i class="fas fa-calendar"></i> March 13, 2026</span>
-                <span><i class="fas fa-user"></i> By SEO Expert Team</span>
-                <span><i class="fas fa-folder"></i> Web Development</span>
+    <!-- ═══ HERO ═══ -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge"><i class="fas fa-map-marker-alt"></i> Fort Lauderdale's Trusted Web Agency</div>
+            <h1>Premium <span>Website Development</span> Services in Fort Lauderdale</h1>
+            <p>We build high-performance, conversion-focused websites for Fort Lauderdale businesses that want to dominate the South Florida market with expert SEO and stunning design.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn-primary"><i class="fas fa-rocket"></i> Start Your Project</a>
+                <a href="#testimonials" class="btn-secondary"><i class="fas fa-star"></i> Read Reviews</a>
             </div>
-            <h1><span class="text-gradient">Website Development Services in Fort Lauderdale</span>, Florida</h1>
-        </header>
-
-        <div class="featured-image-container">
-            <img src="assets/web_dev_fort_lauderdale_hero.png" alt="Website Development Services in Fort Lauderdale">
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-num">300+</div>
+                    <div class="stat-label">Projects Delivered</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">12+</div>
+                    <div class="stat-label">Years in FL</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">98%</div>
+                    <div class="stat-label">Success Rate</div>
+                </div>
+            </div>
         </div>
+        <div class="hero-visual">
+            <div class="hero-card">
+                <div class="hero-card-icon"><i class="fas fa-bolt-lightning" style="color:var(--primary)"></i></div>
+                <h4>Speed Performance</h4>
+                <p>99/100 PageSpeed scores</p>
+            </div>
+            <div class="hero-card">
+                <div class="hero-card-icon"><i class="fas fa-ranking-star" style="color:var(--accent)"></i></div>
+                <h4>SEO Dominance</h4>
+                <p>#1 Rankings in Broward</p>
+            </div>
+            <div class="hero-card">
+                <div class="hero-card-icon"><i class="fas fa-chart-pie" style="color:var(--secondary)"></i></div>
+                <h4>ROI Focused</h4>
+                <p>3x Average conversion</p>
+            </div>
+        </div>
+    </section>
 
+    <div class="container">
         <article class="post-content">
-            <p>If you're operating a business in South Florida, you already know how fiercely competitive the local market has become. From the bustling streets of Las Olas Boulevard to the sprawling tech hubs emerging across Broward County, visibility is everything. Finding reliable <strong>Website Development Services in Fort Lauderdale, Florida</strong> is no longer just a checkbox on your marketing list—it is the foundational pillar of your brand's entire digital growth strategy.</p>
-
-            <p>As consumer behavior shifts entirely toward digital-first interactions, your website serves as your 24/7 digital storefront, your most persistent salesperson, and the first impression you make on potential clients. A generic, slow-loading template won't cut it anymore. What you need is a robust, hyper-optimized digital experience crafted by an expert <strong>web development company in Fort Lauderdale</strong>.</p>
-
-            <div class="info-box">
-                <p><i class="fas fa-lightbulb" style="color: var(--primary); margin-right: 10px;"></i><strong>Did You Know?</strong> Research indicates that 88% of local searches on mobile devices lead to a call or visit within 24 hours. If your website isn't optimized for both speed and local intent, you are actively losing revenue to competitors.</p>
+            <div class="about-section">
+                <div class="about-text">
+                    <p>If you're operating a business in South Florida, you already know how fiercely competitive the local market has become. From the bustling streets of Las Olas Boulevard to the sprawling tech hubs emerging across Broward County, visibility is everything. Finding reliable <strong>Website Development Services in Fort Lauderdale, Florida</strong> is no longer just a checkbox on your marketing list—it is the foundational pillar of your brand's entire digital growth strategy.</p>
+                    <p>As consumer behavior shifts entirely toward digital-first interactions, your website serves as your 24/7 digital storefront. A generic, slow-loading template won't cut it anymore. What you need is a robust, hyper-optimized digital experience crafted by an expert <strong>web development company in Fort Lauderdale</strong>.</p>
+                </div>
+                <div>
+                     <div class="insight-card">
+                        <div class="insight-icon"><i class="fas fa-lightbulb"></i></div>
+                        <div class="insight-content">
+                            <h4>Local Success Insight</h4>
+                            <p>Research indicates that 88% of local searches on mobile devices lead to a call or visit within 24 hours. If your website isn't optimized for both speed and local intent, you are actively losing revenue to competitors in the 954 area.</p>
+                        </div>
+                     </div>
+                </div>
             </div>
 
-            <h2>Why Businesses in Fort Lauderdale Need Professional Websites</h2>
-            
-            <p>Fort Lauderdale is often referred to as the "Venice of America," teeming with luxury real estate, tourism, maritime industries, and a rapidly expanding startup ecosystem. Businesses operating here face unique challenges and opportunities that only a custom-tailored <strong>Florida website design agency</strong> can address.</p>
+            <div class="section-separator"></div>
 
-            <p>A professional website acts as the central hub for all your inbound marketing efforts. While social media algorithms change and ad costs rise, your website is the one digital asset you truly own and control. For a Fort Lauderdale business, investing in top-tier web development addresses several critical needs:</p>
+            <div class="section-header" style="text-align: left;">
+                <div class="section-label">The Strategy</div>
+                <h2 style="text-align: left; border: none; padding: 0;">Why Your Business Needs the Best <br><span>Web Design Services</span> in Fort Lauderdale</h2>
+                <p style="text-align: left; font-size: 1.05rem; color: var(--muted); margin-bottom: 24px; max-width: 100%;">Fort Lauderdale is a rapidly expanding tech and tourism hub. Your local customers have uniquely high expectations. They demand speed, mobile responsiveness, and an aesthetic that reflects the vibrant nature of the city itself. Professional <strong>web design services Fort Lauderdale FL</strong> provides businesses with an immediate advantage. We deliver:</p>
+            </div>
 
-            <ul>
-                <li><strong>First Impressions & Credibility:</strong> Visitors form an opinion about your business in less than 50 milliseconds. A sleek, modern user interface (UI) immediately establishes trust and authority.</li>
-                <li><strong>Technical Performance:</strong> Florida’s diverse population uses a myriad of devices. A professional <strong>responsive web design in South Florida</strong> ensures flawless performance on desktops, tablets, and mobile phones alike.</li>
-                <li><strong>Conversion Optimization:</strong> It’s not enough to just get traffic. Professional developers implement strategic User Experience (UX) flows that naturally guide visitors toward taking action—be it booking a consultation, buying a product, or giving you a call.</li>
-                <li><strong>Foundation for SEO:</strong> Search Engine Optimization begins at the code level. A beautifully designed site built on messy code will never rank well. Professional development ensures a clean, crawlable architecture.</li>
-            </ul>
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <div class="problem-icon-box"><i class="fas fa-star"></i></div>
+                    <div class="problem-content">
+                        <h3>First Impressions</h3>
+                        <p>A stunning, modern interface signals that you are a high-end, reputable authority in your industry from the second a user lands.</p>
+                    </div>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon-box"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="problem-content">
+                        <h3>Mobile-First Design</h3>
+                        <p>With most local searches on smartphones, our rigorous mobile-first strategy guarantees your site functions flawlessly on any device.</p>
+                    </div>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon-box"><i class="fas fa-filter"></i></div>
+                    <div class="problem-content">
+                        <h3>Lead Funnels</h3>
+                        <p>We strategically position CTAs and intuitively structured forms that guide users down the conversion pipeline effectively.</p>
+                    </div>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon-box"><i class="fas fa-search"></i></div>
+                    <div class="problem-content">
+                        <h3>SEO Built-In</h3>
+                        <p>We lay down a pristine code architecture from day one that search engines love, giving you an immediate rankings boost.</p>
+                    </div>
+                </div>
+            </div>
 
-            <h2>Key Web Development Services for Local Businesses</h2>
+            <div class="section-separator"></div>
 
-            <p>As a leading agency, we understand that there is no "one-size-fits-all" solution. The requirements for an upscale boutique in Miami differ wildly from a maritime logistics company based in Port Everglades. That’s why we offer a comprehensive suite of services precisely engineered for your specific operational needs.</p>
+            <div class="section-header">
+                <div class="section-label">Our Expertise</div>
+                <h2 style="border: none; padding: 0;">Comprehensive <span>Website Development</span> Solutions</h2>
+                <p style="font-size: 1.05rem; color: var(--muted); margin-bottom: 0;">Whether you're a startup in Victoria Park or an law firm in Coral Ridge, we tailor our solutions to fit your exact operational needs and budget.</p>
+            </div>
 
-            <h3>1. Custom Web Design & Development</h3>
-            <p>We build highly customized, from-scratch digital platforms. Unlike cheap offshore builders who slap your logo on a pre-made template, our <strong>custom website design in Broward County</strong> focuses on high-performance infrastructure, immersive glassmorphic UI, dynamic animations, and scalable architecture.</p>
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <div class="problem-icon-box"><i class="fas fa-code"></i></div>
+                    <div class="problem-content">
+                        <h3>Custom Development</h3>
+                        <p>We build highly customized, from-scratch digital platforms targeting high-performance infrastructure and immersive glassmorphic UI.</p>
+                    </div>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon-box"><i class="fab fa-wordpress"></i></div>
+                    <div class="problem-content">
+                        <h3>WordPress Experts</h3>
+                        <p>As dedicated WordPress developers in Fort Lauderdale, we create custom, scalable themes that bypass sluggish, bloated templates.</p>
+                    </div>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon-box"><i class="fas fa-shopping-cart"></i></div>
+                    <div class="problem-content">
+                        <h3>E-commerce Solutions</h3>
+                        <p>Our e-commerce development for South Florida brands ensures secure payment gateways and frictionless checkout processes.</p>
+                    </div>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon-box"><i class="fas fa-search-location"></i></div>
+                    <div class="problem-content">
+                        <h3>Local SEO Services</h3>
+                        <p>We implement hyper-localized marketing intelligence directly into your site, helping you rank for competitive regional keywords.</p>
+                    </div>
+                </div>
+            </div>
 
-            <h3>2. WordPress Development in Fort Lauderdale</h3>
-            <p>WordPress powers over 40% of the internet, but standard out-of-the-box setups are incredibly slow. As a dedicated <strong>WordPress developer in Fort Lauderdale</strong>, we specialize in high-performance implementations, custom theme development, and secure plugin integrations that allow you to manage your content effortlessly without sacrificing load speed.</p>
+            <h2>Our Proven Development Process</h2>
+            <p>Transparency and structured execution are at the heart of our methodology. We eliminate the guesswork and replace it with results.</p>
 
-            <h3>3. E-commerce Web Development (Miami & Fort Lauderdale)</h3>
-            <p>Whether you're utilizing Shopify, WooCommerce, or a custom build, our <strong>eCommerce web development for Miami</strong> and Fort Lauderdale brands ensures secure payment gateways, optimized product pages, rapid load times, and frictionless checkout processes designed to maximize your return on investment (ROI).</p>
+            <div class="process-timeline">
+                <div class="zig-step">
+                    <div class="zig-card">
+                        <strong>Discovery & Strategy</strong>
+                        <p>We analyze your business model, target demographics, and local competitors to map out a tailored strategy architecture.</p>
+                    </div>
+                    <div class="zig-num-wrap"><div class="zig-num">1</div></div>
+                    <div class="zig-empty"></div>
+                </div>
+                <div class="zig-step">
+                    <div class="zig-empty"></div>
+                    <div class="zig-num-wrap"><div class="zig-num">2</div></div>
+                    <div class="zig-card">
+                        <strong>UI/UX Design</strong>
+                        <p>Our team crafts high-fidelity mockups. You see the sleek visual direction and user flow before any coding begins.</p>
+                    </div>
+                </div>
+                <div class="zig-step">
+                    <div class="zig-card">
+                        <strong>Full-Stack Development</strong>
+                        <p>Our engineers bring the designs to life utilizing modern technologies to ensure lightweight, lightning-fast code.</p>
+                    </div>
+                    <div class="zig-num-wrap"><div class="zig-num">3</div></div>
+                    <div class="zig-empty"></div>
+                </div>
+                <div class="zig-step">
+                    <div class="zig-empty"></div>
+                    <div class="zig-num-wrap"><div class="zig-num">4</div></div>
+                    <div class="zig-card">
+                        <strong>Technical SEO</strong>
+                        <p>We integrate persuasive copywriting alongside robust technical SEO protocols for maximum Google visibility.</p>
+                    </div>
+                </div>
+                <div class="zig-step">
+                    <div class="zig-card">
+                        <strong>Rigorous Testing</strong>
+                        <p>We stress test across mobile devices and browsers, verifying every button and animation functions flawlessly.</p>
+                    </div>
+                    <div class="zig-num-wrap"><div class="zig-num">5</div></div>
+                    <div class="zig-empty"></div>
+                </div>
+                <div class="zig-step">
+                    <div class="zig-empty"></div>
+                    <div class="zig-num-wrap"><div class="zig-num">6</div></div>
+                    <div class="zig-card">
+                        <strong>Launch & Support</strong>
+                        <p>We push your site live and provide ongoing optimization strategies to scale your digital presence indefinitely.</p>
+                    </div>
+                </div>
+            </div>
 
-            <h3>4. Web Application Development</h3>
-            <p>For businesses requiring complex logic—such as client portals, custom booking engines, or intricate CRM integrations—we provide robust web application development capabilities using modern tech stacks to handle heavy data lifting securely and efficiently.</p>
-
-            <h2>Benefits of Hiring a Local Web Development Company</h2>
-
-            <p>In an era of remote work, you might wonder why you shouldn't just outsource your project to the cheapest bidder thousands of miles away. The answer boils down to market intelligence, communication, and accountability.</p>
-
-            <p>Partnering with a <strong>professional web developer in Fort Lauderdale, FL</strong> provides distinct advantages that remote freelancers simply cannot match:</p>
-
-            <ul>
-                <li><strong>Understanding the Local Market:</strong> We live and breathe South Florida. We understand the specific demographics, seasonal shifts, and cultural nuances of Fort Lauderdale and Miami. This insight directly influences the design, copywriting, and user flow of your website.</li>
-                <li><strong>Face-to-Face Accountability:</strong> You know exactly who is working on your project. If you need to meet for a strategy session or to review a wireframe, a local agency is accessible, providing peace of mind and transparent communication.</li>
-                <li><strong>Synergistic Local SEO:</strong> A local agency intrinsically understands the geographical targeting necessary to rank for highly competitive regional keywords, avoiding the disconnect that often happens with out-of-state marketers.</li>
-                <li><strong>Networking and Connections:</strong> Local agencies often have established networks containing reliable photographers, videographers, and PR specialists in the area, offering you a holistic digital growth pipeline.</li>
-            </ul>
-
-            <img src="assets/design_ux_visual_premium_1772742325301.png" alt="Dynamic Web Development Process" style="width: 100%; border-radius: 20px; margin: 30px 0; border: 1px solid var(--border);">
-
-            <h2>Why Our Agency Is Better Than Competitors</h2>
-
-            <p>Search "Website Development Services in Fort Lauderdale, Florida" and you will instantly find dozens of agencies making identical promises. So, what actually separates DesignX from the rest of the pack?</p>
-
-            <p>For us, development is not just about writing code; it's about <strong>business acceleration</strong>. The majority of agencies build a pretty website, hand over the keys, and disappear. Or worse, they construct websites using bloated page builders that look fine on the surface but score terribly on Google’s Core Web Vitals metrics.</p>
-
-            <p>We pride ourselves on being the <strong>best website development service in Florida</strong> because we employ an integrated, data-driven methodology:</p>
-
-            <ul>
-                <li><strong>Performance Obsession:</strong> We write aggressively optimized, clean code ensuring millisecond load times. A fast website dramatically lowers bounce rates and significantly boosts both conversions and SEO rankings.</li>
-                <li><strong>Premium Tier Aesthetics:</strong> We don't do "good enough." We employ high-end design principles—dark modes, vibrant accent colors, subtle micro-animations, and modern typography—that create an unmistakable premium "wow" factor for your users.</li>
-                <li><strong>Security & Scalability:</strong> Your website is fortified against vulnerabilities from day one, built on scalable infrastructure that grows seamlessly alongside your revenue.</li>
-                <li><strong>SEO-First Architecture:</strong> We build search engine optimization into the very DNA of the site. From semantic HTML5 to optimized asset delivery, your site launches ready to dominate Google search results.</li>
-            </ul>
-
-            <h2>Website Development Process</h2>
-
-            <p>The success of any major digital overhaul relies heavily on an organized, transparent execution framework. Our proven development lifecycle removes the stress and ambiguity from launching your new platform.</p>
-
-            <ol>
-                <li><strong>Discovery & Strategy:</strong> We begin with a deep dive into your business goals, target audience, and local competitors. We map out a tailored strategy architecture that aligns with your objectives.</li>
-                <li><strong>UI/UX Design & Prototyping:</strong> We develop wireframes and stunning visual prototypes. You get a fully interactive preview of your site's look and feel, ensuring our vision perfectly matches your brand identity before a single line of code is written.</li>
-                <li><strong>Full-Stack Development:</strong> Our engineers build your site using the latest frameworks. We integrate necessary CMS platforms, APIs, and databases, ensuring total mobile responsiveness and peak performance across all browsers.</li>
-                <li><strong>Quality Assurance & Testing:</strong> We stress test everything. Form submissions, payment gateways, mobile layouts, and page speeds are rigorously checked to ensure a flawless launch.</li>
-                <li><strong>Launch & Ongoing Growth:</strong> We push your site live and monitor for stability. From there, we migrate into strategic Local SEO optimization and continuous performance maintenance.</li>
-            </ol>
-
-            <h2>Local SEO Advantages for Florida Businesses</h2>
-
-            <p>Possessing an incredible website does nothing for your bottom line if your target audience can’t find it. Because Google handles over 8.5 billion searches a day, capturing local intent is the most lucrative action a Fort Lauderdale business can take.</p>
-
-            <p>When you integrate <strong>Local SEO in Fort Lauderdale</strong> concurrently with web development, the compounding benefits are immense. We implement localized schema markup, optimized meta structures, location-specific landing pages, and Google Business Profile synergy directly into the website's framework. This deliberate engineering signals to Google exactly where you are and who you serve.</p>
-
-            <p>Whether someone is searching for <strong>"Web design services Miami"</strong> or hunting for a local attorney in Broward County, an SEO-optimized site guarantees you show up in the "Local Pack" (the map results), skipping the line and putting your business directly in front of highly-motivated, ready-to-buy customers.</p>
-
-            <!-- FAQ Section -->
             <div class="faq-section">
-                <h2>FAQs About Website Development in Fort Lauderdale</h2>
-                <p>We know that commissioning a new website is a significant decision. Here are straight answers to the most common questions we receive from South Florida businesses.</p>
-                
+                <h2>Frequently Asked Questions</h2>
                 <div class="faq-item">
-                    <div class="faq-question">
-                        How much does a custom website cost in Fort Lauderdale?
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Website pricing varies entirely on scope, functionality, and customization. A basic, high-performance brochure site may start around $3,000, while a robust e-commerce platform or custom application can range from $10,000 to $25,000+. We provide transparent, flat-rate quotes after our initial discovery call, ensuring no hidden fees.</p>
-                    </div>
+                    <div class="faq-question">What is the cost of website development in Fort Lauderdale? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Pricing is project-dependent. Custom sites typically start around $3,000, while complex e-commerce or web applications range higher. We provide flat-rate, transparent quotes.</p></div>
                 </div>
-
                 <div class="faq-item">
-                    <div class="faq-question">
-                        How long does it take to design and develop a new website?
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Typically, a standard custom website takes between 4 to 8 weeks from the initial kickoff meeting to final deployment. More complex projects requiring custom logic, intricate WordPress development, or massive data migrations may take 10 to 14 weeks.</p>
-                    </div>
+                    <div class="faq-question">Do you provide SEO with the web design? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Yes. SEO is foundational to our process. Every site includes speed optimization, schema markup, and meta tag optimization primed to rank for local keywords.</p></div>
                 </div>
-
                 <div class="faq-item">
-                    <div class="faq-question">
-                        Do you provide SEO services with your web design?
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Absolutely. Every site we build is engineered with technical SEO best practices (speed, mobile-optimization, meta tags). Furthermore, we offer comprehensive, ongoing Local SEO services to ensure you dominate Google's search rankings in Fort Lauderdale and Miami.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <div class="faq-question">
-                        Will I be able to update the website myself?
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Yes! We specialize in building user-friendly Content Management Systems (CMS) tailored to your team's technical comfort level. Once launched, we provide personalized training so you can easily update text, change images, and publish new blog posts without needing to write a single line of code.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        Do you offer website maintenance and hosting?
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Yes, we offer premium, highly secure hosting and ongoing maintenance packages. We handle daily backups, software updates, security monitoring, and technical troubleshooting so you can focus entirely on running your business.</p>
-                    </div>
+                    <div class="faq-question">How long does it take to launch? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Most standard business websites are completed within 4 to 8 weeks. Larger platforms or custom apps may require 10 to 14 weeks.</p></div>
                 </div>
             </div>
-
-            <div class="blog-cta">
-                <div class="blog-cta-content">
-                    <h2>Ready to Dominate the <span class="text-gradient">South Florida Market?</span></h2>
-                    <p style="font-size: 1.15rem; margin-top: 15px; margin-bottom: 5px;">Stop losing customers to competitors with better-looking websites.</p>
-                    <p style="font-size: 1.05rem;">Partner with the premier web development experts in Fort Lauderdale and watch your revenue grow.</p>
-                    <a href="index.html#contact" class="cta-btn">Claim Your Free Website Strategy Audit ↗</a>
-                </div>
-            </div>
-
         </article>
     </div>
 
-    <!-- ═══ FOOTER ═══ -->
-    <footer>
-        <div class="footer-top">
-            <div class="footer-brand">
-                <div class="footer-logo">DesignX</div>
-                <p>Fort Lauderdale's trusted web design and development agency. We build high-performance websites,
-                    deliver expert local SEO, and create designs that help South Florida businesses grow online.</p>
-                <p style="margin-top:12px;font-size:12px;color:var(--muted);"><i class="fas fa-map-marker-alt"
-                        style="color:var(--primary);margin-right:4px;"></i> Fort Lauderdale, FL 33301 &nbsp;|&nbsp;
-                    Serving all of South Florida</p>
-                <div class="footer-social">
-                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-behance"></i></a>
+    <!-- ═══ FINAL CTA ═══ -->
+    <section class="final-cta">
+        <h2>Ready to Scale Your <span>Fort Lauderdale Business?</span></h2>
+        <p>Don't let subpar design cost you another lead. Partner with the leading web development agency in Fort Lauderdale.</p>
+        <a href="index.html#contact" class="cta-btn">Get Your Free Strategy Call ↗</a>
+    </section>
+
+    <!-- ═══ TESTIMONIALS ═══ -->
+    <section id="testimonials" style="background:var(--dark);">
+        <div class="section-header">
+            <div class="grid-center"><div class="section-label">Success Stories</div></div>
+            <h2>Trusted by <span>Local Leaders</span></h2>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div><div class="stars">★★★★★</div><p>"DesignX built our Fort Lauderdale real estate site. Our traffic is up 200% and lead quality is better than ever. Extremely professional."</p></div>
+                <div class="testimonial-author"><div class="author-avatar">MS</div><div class="author-info"><h5>Michael Stevens</h5><span>Owner, FL Coastal Realty</span></div></div>
+            </div>
+            <div class="testimonial-card">
+                <div><div class="stars">★★★★★</div><p>"The WordPress experts here are amazing. They fixed our slow site and got us on page 1 of Google within months. Best agency in Broward!"</p></div>
+                <div class="testimonial-author"><div class="author-avatar">JD</div><div class="author-info"><h5>Jane Doe</h5><span>Founder, 954 Marketing</span></div></div>
+            </div>
+            <div class="testimonial-card">
+                <div><div class="stars">★★★★★</div><p>"Exceptional service and design. They truly understand the South Florida market. Highly recommend for any business looking to grow."</p></div>
+                <div class="testimonial-author"><div class="author-avatar">RB</div><div class="author-info"><h5>Robert Brown</h5><span>Director, Maritime Logistics</span></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ CONTACT ═══ -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="section-label">Get In Touch</div>
+                <h2>Ready to <span>Build Your Future?</span></h2>
+                <p>Let's discuss your project and build a digital strategy that delivers real measurement growth.</p>
+                <div class="contact-methods">
+                    <div class="method-item"><div class="method-icon"><i class="fas fa-envelope"></i></div><div><h5>Email Us</h5><p>oxana@foxylabny.com</p></div></div>
+                    <div class="method-item"><div class="method-icon"><i class="fas fa-phone"></i></div><div><h5>Call Us</h5><p>+1 718 807 5262</p></div></div>
+                </div>
+                <div class="trust-badges">
+                    <div class="badge-item"><i class="fas fa-check-circle"></i> Free Audit</div>
+                    <div class="badge-item"><i class="fas fa-check-circle"></i> 24h Response</div>
                 </div>
             </div>
-            <div class="footer-col">
-                <h5>Services</h5>
-                <ul>
-                    <li><a href="services.html">Website Development</a></li>
-                    <li><a href="services.html">WordPress Development</a></li>
-                    <li><a href="services.html">Local SEO Services</a></li>
-                    <li><a href="services.html">Squarespace Design</a></li>
-                    <li><a href="services.html">Content Writing</a></li>
-                    <li><a href="services.html">Graphic Design</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h5>Quick Links</h5>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="process.html">Process</a></li>
-                    <li><a href="results.html">Results</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h5>Contact</h5>
-                <ul>
-                    <li><a href="mailto:oxana@foxylabny.com">oxana@foxylabny.com</a></li>
-                    <li><a href="tel:+17188075262">+1 718 807 5262</a></li>
-                    <li><a href="index.html#contact">Free Consultation</a></li>
-                    <li><a href="index.html#contact">Get a Quote</a></li>
-                </ul>
+            <div class="contact-form-wrapper">
+                <form class="lead-form" action="https://formsubmit.co/taqadasurrehman@gmail.com" method="POST">
+                    <input type="hidden" name="_next" value="https://design-x-web.netlify.app/index.html">
+                    <div class="form-row">
+                        <div class="form-group"><label>Full Name</label><input type="text" name="name" required></div>
+                        <div class="form-group"><label>Email</label><input type="email" name="email" required></div>
+                    </div>
+                    <div class="form-group"><label>Message</label><textarea name="message" rows="4"></textarea></div>
+                    <button type="submit" class="cta-btn" style="width:100%; border:none; cursor:pointer;">Send Message</button>
+                </form>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>© 2026 <span>DesignX</span>. Fort Lauderdale, FL. All rights reserved.</p>
-            <p style="font-size:.82rem;color:var(--muted);">Web Design · Development · SEO · Fort Lauderdale, Florida
-            </p>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-brand"><div class="footer-logo">DesignX</div><p>South Florida's trusted web development agency. Building high-performance digital engines.</p></div>
+            <div class="footer-col"><h5>Services</h5><ul><li><a href="services.html">Web Development</a></li><li><a href="web-design-company-miami.html">Miami Web Design</a></li></ul></div>
+            <div class="footer-col"><h5>Company</h5><ul><li><a href="process.html">Process</a></li><li><a href="blog.html">Blog</a></li><li><a href="sitemap.html">Sitemap</a></li></ul></div>
+            <div class="footer-col"><h5>Contact</h5><ul><li><a href="mailto:oxana@foxylabny.com">Email Us</a></li><li><a href="tel:+17188075262">Call Us</a></li></ul></div>
         </div>
+        <div class="footer-bottom"><p>© 2026 <span>DesignX</span>. Fort Lauderdale, FL. All rights reserved.</p></div>
     </footer>
 
     <script>
-        // FAQ Toggle Script
         document.querySelectorAll('.faq-question').forEach(question => {
             question.addEventListener('click', () => {
                 const item = question.parentNode;
-                
-                // Check if already active
                 const isActive = item.classList.contains('active');
-                
-                // Close all items
-                document.querySelectorAll('.faq-item').forEach(faq => {
-                    faq.classList.remove('active');
-                });
-                
-                // If it wasn't active, open it
-                if (!isActive) {
-                    item.classList.add('active');
-                }
+                document.querySelectorAll('.faq-item').forEach(faq => faq.classList.remove('active'));
+                if (!isActive) item.classList.add('active');
             });
         });
     </script>
