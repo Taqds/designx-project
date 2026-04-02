@@ -2351,13 +2351,9 @@ nav {
             </div>
 
             <div class="contact-form-wrapper fade-up">
-                <form class="lead-form" id="mainContactForm" action="https://formsubmit.co/taqadasurrehman@gmail.com"
-                    method="POST">
-                    <!-- Security/Optimization for FormSubmit -->
-                    <input type="hidden" name="_next" value="https://design-x-web.netlify.app/index.html">
-                    <input type="hidden" name="_subject" value="New Lead from DesignX Website">
-                    <input type="hidden" name="_template" value="table">
-                    <input type="hidden" name="_captcha" value="false">
+                <form class="lead-form" id="mainContactForm" action="https://formspree.io/f/taqadasurrehman@gmail.com" method="POST">
+                    <!-- Formspree optimization -->
+                    <input type="hidden" name="_gotcha" style="display:none !important">
                     <div class="form-row">
                         <div class="form-group">
                             <label>Full Name</label>
@@ -2686,11 +2682,10 @@ nav {
                 btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
 
                 try {
-                    const response = await fetch('https://formsubmit.co/ajax/taqadasurrehman@gmail.com', {
-                        method: 'POST',
-                        body: JSON.stringify(Object.fromEntries(formData)),
+                    const response = await fetch("https://formspree.io/f/taqadasurrehman@gmail.com", {
+                        method: "POST",
+                        body: formData,
                         headers: {
-                            'Content-Type': 'application/json',
                             'Accept': 'application/json'
                         }
                     });
@@ -2699,13 +2694,14 @@ nav {
                         btn.style.background = 'var(--accent)';
                         btn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
                         status.style.color = 'var(--accent)';
-                        status.innerHTML = 'Thank you! Your message has been sent to taqadasurrehman@gmail.com. We will contact you within 24 hours.';
+                        status.innerHTML = 'Thank you! Your message has been sent successfully. We will contact you within 24 hours.';
                         contactForm.reset();
                     } else {
-                        contactForm.submit();
+                        throw new Error('Form submission failed');
                     }
                 } catch (error) {
-                    contactForm.submit();
+                    status.style.color = 'var(--secondary)';
+                    status.innerHTML = 'Something went wrong. Please try again later or email us directly.';
                 }
 
                 setTimeout(() => {
