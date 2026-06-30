@@ -6,7 +6,6 @@
     <loc>https://design-x-web.netlify.app/</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1.00</priority>
   </url>
 
   <!-- Service Pages -->
@@ -14,19 +13,16 @@
     <loc>https://design-x-web.netlify.app/services.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://design-x-web.netlify.app/web-design-company-miami.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://design-x-web.netlify.app/website-development-services-fort-lauderdale.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
   </url>
 
   <!-- Key Process & Results -->
@@ -34,19 +30,16 @@
     <loc>https://design-x-web.netlify.app/process.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://design-x-web.netlify.app/results.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://design-x-web.netlify.app/reviews.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
   </url>
 
   <!-- Content & Blog -->
@@ -54,49 +47,41 @@
     <loc>https://design-x-web.netlify.app/blog.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://design-x-web.netlify.app/blog-single.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
   </url>
   <url>
     <loc>https://design-x-web.netlify.app/ultimate-guide-web-design-fort-lauderdale.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://design-x-web.netlify.app/dominating-local-pack-broward-county.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
   </url>
   <url>
     <loc>https://design-x-web.netlify.app/why-headless-wordpress-for-performance.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
   </url>
   <url>
     <loc>https://design-x-web.netlify.app/future-proofing-ecommerce-south-florida.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
   </url>
   <url>
     <loc>https://design-x-web.netlify.app/florida-small-business-website-seo-guide.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
   </url>
   <url>
     <loc>https://design-x-web.netlify.app/web-design-fort-lauderdale-leads.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
   </url>
 
   <!-- Support & Navigation -->
@@ -104,13 +89,11 @@
     <loc>https://design-x-web.netlify.app/faq.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
   </url>
   <url>
     <loc>https://design-x-web.netlify.app/sitemap.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.40</priority>
   </url>
 
 </urlset>
