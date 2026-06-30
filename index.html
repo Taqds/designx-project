@@ -2262,7 +2262,7 @@ nav {
         </div>
     </section>
 
-    <!-- ═══ INDUSTRIES ═══ 
+    <!-- ═══ INDUSTRIES ═══ -->
     <section id="industries" style="background:var(--dark2);">
         <div class="section-header fade-up">
             <div class="grid-center">
@@ -2287,7 +2287,6 @@ nav {
             <div class="industry-tag"><i class="fas fa-car" style="color:var(--accent)"></i> Auto Industry</div>
         </div>
     </section>
-    -->
 
     <!-- ═══ FAQ ═══ -->
     <section id="faq" style="background:var(--dark);">
@@ -2392,9 +2391,10 @@ nav {
             </div>
 
             <div class="contact-form-wrapper fade-up">
-                <form class="lead-form" id="mainContactForm" action="https://formspree.io/f/taqadasurrehman@gmail.com" method="POST">
-                    <!-- Formspree optimization -->
-                    <input type="hidden" name="_gotcha" style="display:none !important">
+                <form class="lead-form" id="mainContactForm" action="https://formspree.io/f/mzzbkdvr" method="POST">
+                    <!-- Formspree honeypot spam protection -->
+                    <input type="hidden" name="_replyto" value="">
+                    <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off">
                     <div class="form-row">
                         <div class="form-group">
                             <label>Full Name</label>
@@ -2723,7 +2723,7 @@ nav {
                 btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
 
                 try {
-                    const response = await fetch("https://formspree.io/f/taqadasurrehman@gmail.com", {
+                    const response = await fetch("https://formspree.io/f/mzzbkdvr", {
                         method: "POST",
                         body: formData,
                         headers: {
